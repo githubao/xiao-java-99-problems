@@ -12,14 +12,17 @@ import org.junit.Test;
 public class Lesson42Test {
     @Test
     public void shouldGenerateTruthTable() throws Exception {
-//        String table = Lesson40.table((a, b, c) -> Lesson42.equ(Lesson40.and(a, Lesson40.or(b, c)), Lesson40.or(Lesson40.and(a, b), Lesson40.and(a, c))));
+//        String table = Lesson42.table((a, b) -> Lesson42.equ(Lesson40.and(a, Lesson40.or(b, b)), Lesson40.or(Lesson40.and(a, b), Lesson40.and(a, b))));
+
+        String table = Lesson42.table(null);
+
+        System.out.println(table);
+
 //        String result = "A          B          result\n" +
 //                "true       true       true\n" +
 //                "true       false      true\n" +
 //                "false      true       false\n" +
 //                "false      false      false";
 //        assertThat(table, is(equalTo(result)));
-
-//        System.out.println(table);
     }
 }
